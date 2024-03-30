@@ -1,24 +1,17 @@
-import React from "react";
+import FormLogin from './component/Fragments/FormLogin';
 
-class Button extends React.Component {
-  render() {
-    return <div>
-       <button
-    type="button"
-    className={`inline-block rounded ${this.props.varian} px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong`}>
-    {this.props.children}
-  </button>
-
-    </div>
-  }
-}
 function App() {
+
+
   return (
-    <div className="flex justify-center bg-green-700 min-h-screen items-center gap-3">
-      <Button varian="bg-slate-700">login</Button>
-      <Button varian="bg-red-700">logout</Button>
-      <Button varian="bg-blue-700">buy now</Button>
-      <Button varian="bg-yellow-700">add to cart</Button>
+    <div className="flex justify-center min-h-screen items-center gap-3">
+      <div className='w-full max-w-xs'>
+        <h1 className='text-3xl font-bold mb-2  text-blue-500 '>Login</h1>
+        <p className='font-medium text-slate-500 mb-8 '>
+          Welcome, please enter your details 
+        </p>
+        <FormLogin />
+      </div>
     </div>
   );
 }
