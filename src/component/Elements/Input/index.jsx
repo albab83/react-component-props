@@ -1,4 +1,5 @@
 import Label from "./Label"
+import React from "react"
 import Input from "./Input"
 
 const InputForm = (props) => {

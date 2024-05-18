@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from "react-router-dom"
 const AuthLayouts = (props) => {
     const {children, title, type} = props
@@ -10,7 +11,11 @@ const AuthLayouts = (props) => {
                     Welcome, please enter your details 
                 </p>
                 {children}
-                <p className="text-sm py-3 text-center">{type === "login" ? "Dont have an account?" : "Already have an account?"} <Link className="font-bold text-blue-600" to={type === "login" ? "/register" : "/login"}>{type === "login" ? "Sign Up" : "Login"}</Link></p>
+                <p className="text-sm py-3 text-left w-full">
+                    {type === "login" ? "Dont have an account?" : "Already have an account?"}
+                    <Link className="font-bold text-blue-600" to={type === "login" ? "/register" : "/login"}>{type === "login" ? "  Sign Up" : "  Login"}
+                    </Link>
+                </p>
             </div>
         </div>
       )

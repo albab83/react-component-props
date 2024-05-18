@@ -1,3 +1,4 @@
+import React from 'react'
 import AuthLayouts from "../component/Layouts/AuthLayouts"
 import FormRegister from "../component/Fragments/FormRegister"
 
